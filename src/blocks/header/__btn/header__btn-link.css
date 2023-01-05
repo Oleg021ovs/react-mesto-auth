@@ -1,0 +1,21 @@
+.header__btn-link {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    padding: 0;
+    border: none;
+    background-color: #000;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .header__btn-link {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 500;
+        
+        
+    }
+}
