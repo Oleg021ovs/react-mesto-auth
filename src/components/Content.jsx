@@ -123,8 +123,8 @@ function Content({ userLoggedIn }) {
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
-      <div className="page">
-        <>
+      <div className="root">
+        <div className="page">
           <Main
             onEditProfile={handleEditProfileClick}
             onAddPlace={handleAddPlaceClick}
@@ -157,7 +157,7 @@ function Content({ userLoggedIn }) {
             onClose={closeAllPopups}
             isOpen={imagePopupOpen}
           />
-        </>
+        </div>
       </div>
     </CurrentUserContext.Provider>
   );
