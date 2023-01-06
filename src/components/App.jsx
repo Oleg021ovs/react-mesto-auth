@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Header from "./Header";
+//import Main from "./Main";
 import Footer from "./Footer";
 import Register from "./Register";
 import Login from "./Login";
@@ -102,10 +103,9 @@ export default function App() {
           <Route
             path="/"
             element={
-              <ProtectedRoute
-                userLoggedIn={userLoggedIn}
-                component={Content}
-              ></ProtectedRoute>
+              <ProtectedRoute userLoggedIn={userLoggedIn} component={Content}>
+                <Content />
+              </ProtectedRoute>
             }
           />
 
